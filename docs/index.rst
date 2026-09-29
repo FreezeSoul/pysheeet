@@ -4,23 +4,42 @@
    contain the root `toctree` directive.
 
 .. meta::
-    :description lang=en: Collect useful python snippets for pythoneers or non-pythoneers.
-    :keywords: Python, Python Cheat Sheet
+    :description lang=en: Comprehensive Python cheat sheet with practical code snippets, examples, and tutorials for Python developers. Learn Python basics, advanced topics, databases, networking, and more.
+    :keywords: Python, Python Cheat Sheet, Python Tutorial, Python Examples, Python Code Snippets, Programming, Development, Python Reference, Python Guide
 
 
-Welcome to Python Cheatsheet!
-==============================
+Python Cheat Sheet - Complete Guide with Code Examples
+======================================================
 
-Welcome to pysheeet. This project aims at collecting useful Python snippets
-in order to enhance pythoneers' coding experiences. Please feel free to
-contribute if you have any awesome ideas for improvements to code snippets,
-explanations, etc.
+Welcome to **pysheeet** - your ultimate Python cheat sheet! This comprehensive resource contains practical Python
+code snippets, examples, and tutorials to make coding easier and more efficient for Python developers of all levels.
+From basic Python syntax to advanced topics like databases, networking, and multitasking, this cheat sheet serves as your
+complete Python reference guide. Ideal for beginners learning Python fundamentals and experienced developers seeking
+quick code examples. Whether you're learning Python for web development, data science, automation, or general programming,
+you'll find practical examples that save you time and improve your coding efficiency.
 
-Any snippets are welcome. If you'd like to contribute, `fork pysheeet on GitHub`_.
+Contributions are always welcome—feel free to share ideas for new snippets, improvements, or clearer explanations!
+If you'd like to contribute, `fork pysheeet on GitHub`_.
 If there is any question or suggestion, please create an issue on `GitHub Issues`_.
 
 .. _fork pysheeet on GitHub: https://github.com/crazyguitar/pysheeet
 .. _GitHub Issues: https://github.com/crazyguitar/pysheeet/issues
+
+Plugin
+------
+
+**pysheeet** is available as a `Claude Code <https://claude.com/claude-code>`_ plugin. Once installed,
+Claude automatically uses the cheat sheets to answer Python questions.
+
+.. code-block:: bash
+
+    # Step 1: Add the marketplace
+    claude plugin marketplace add crazyguitar/pysheeet
+
+    # Step 2: Install the plugin
+    claude plugin install pysheeet@pysheeet
+
+For local testing and manual installation, see the main `README <https://github.com/crazyguitar/pysheeet/blob/master/README.rst>`_.
 
 What's New In Python 3
 ----------------------
@@ -36,62 +55,32 @@ this part provides a brief glance of new features in Python 3.
 
    notes/python-new-py3
 
-Cheat Sheet
------------
+Blog
+----
 
-This part mainly focuses on common snippets in Python code. The cheat sheet not
-only includes basic Python features but also data structures and algorithms.
+This website also covers advanced topics related to LLM training, inference,
+HPC networking, distributed systems, GPU computing, and Python debugging
+techniques in the `blog </notes/appendix/index.html>`_.
 
-.. toctree::
-   :maxdepth: 1
+Python Cheat Sheet
+------------------
 
-   notes/python-code-style
-   notes/python-basic
-   notes/python-future
-   notes/python-unicode
-   notes/python-list
-   notes/python-set
-   notes/python-dict
-   notes/python-heap
-   notes/python-func
-   notes/python-object
-   notes/python-generator
-   notes/python-typing
-   notes/python-date
-   notes/python-io
-   notes/python-os
-
-
-Advanced Cheat Sheet
---------------------
-
-The goal of this part is to give common snippets including built-in and 3rd party
-modules usages.
+This section focuses on commonly used Python code snippets. The cheat sheet
+covers not only core Python features but also essential data structures,
+algorithms, and frequently used modules to help programmers efficiently tackle
+everyday tasks.
 
 .. toctree::
    :maxdepth: 1
 
-   notes/python-rexp
-   notes/python-socket
-   notes/python-asyncio
-   notes/python-concurrency
-   notes/python-sqlalchemy
-   notes/python-security
-   notes/python-ssh
-   notes/python-aws
-   notes/python-tests
-   notes/python-c-extensions
-
-Appendix
---------
-
-The appendix mainly focuses on some critical concepts missing in cheat sheets.
-
-.. toctree::
-    :maxdepth: 1
-
-    appendix/python-decorator
-    appendix/python-concurrent
-    appendix/python-asyncio
-    appendix/python-walrus
-    appendix/python-gdb
+   notes/interview/index
+   notes/basic/index
+   notes/os/index
+   notes/concurrency/index
+   notes/asyncio/index
+   notes/network/index
+   notes/database/index
+   notes/security/index
+   notes/extension/index
+   notes/llm/index
+   notes/hpc/index
